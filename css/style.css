@@ -19,11 +19,14 @@ header .inner{
   margin:0px auto;
   position:relative;
 }
-img{
+header .inner img{
+  position:absolute;
   margin:10px 10px;
 }
-h1{
-  display:inline;
+header .inner h1{
+  position:absolute;
+  top:20px;
+  left:70px;
   color:rgb(0, 123, 29);
 }
 header .inner .util{
