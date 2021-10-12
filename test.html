@@ -5,8 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/style.css">
-  <script defer src="test.js"></script>
-  <script defer src="data.js"></script>
+  <!-- <script src="../js/data.js" charset="utf-8"></script> -->
   <title>GG project</title>
 </head>
 <body>
@@ -31,16 +30,17 @@
   <section>
       <div id="test">
         <h1 id="title">테스트를 시작합시다</h1>
-        <button id="stBtn">시작</button>
+        <button id="stBtn" onclick="js:begin()">시작</button>
       </div>
   </section>
   <section id="qna">
       <div class="statusBar"> </div>
       <div class="qBox"></div>
       <div class="aBox">
-        <button id="ansA">A.</button>
-        <button id="ansB">B.</button>
-        <button id="ansC">C.</button>
+      </div>
+      <div class="prevNext">
+        <button id="prev" onclick="js:goPrev()">Prev</button>
+        <button id="next" onclick="js:goNext(this)">Next</button>
       </div>
   </section>
   <section id="result">
@@ -51,19 +51,8 @@
   </div>
   </section>
   <script>
-    let $button = document.querySelector("#stBtn");
-    //html에서 id가 stBtn인 태그를 $button 변수에 연결
-    let $qBox = document.querySelector(".qBox");
-    //class가 .qBox인 태그를 $qBox 변수에 연결
-    let $aBox = document.querySelector(".aBox");
-    let $title = document.querySelector("#title");   
-    const onClick = () => {
-      console.log("테스트 시작");
-      $title.textContent = ' 테스트가 시작되었습니다.';
-    };
-    $button.addEventListener("click", onClick);
-    //$button 에 eventListener을 추가해서 click 이벤트 발생 시 onClick함수 실행
-    //이 때 함수는 es6문법인 화살표함수(익명함수)로 만듦
     </script>
+     <script src="../js/data.js" charset="utf-8"></script>
+     <script src="../js/test.js" charset="utf-8"></script>
 </body>
 </html>
