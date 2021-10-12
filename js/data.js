@@ -1,4 +1,4 @@
-const qnaList = [
+const qnaListss = [
   {
     q: '1. 우유팩은 어떻게 분리해야할까?',
     a: [
