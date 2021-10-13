@@ -1,4 +1,7 @@
 const qnaSection = document.getElementById("qna");
+const title = document.getElementById("title");
+const stBtn = document.getElementById("stBtn");
+const start = document.getElementById("start");
 const qBox = document.querySelector(".qBox");
 const aBox = document.querySelector(".aBox");
 const answer = document.querySelectorAll(".answer");
@@ -6,6 +9,12 @@ const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
 
 let qIdx = 0;
+
+function beginTest() {
+    title.innerText ="테스트 시작되었어요";
+    stBtn.style.display = "none";
+    showQuestion(qIdx);
+}
 
 function showQuestion(qIdx) {
     //console.log(qnaListss[qIdx])
@@ -32,5 +41,4 @@ function onNext() {
 
 prevBtn.addEventListener("click", onPrev);
 nextBtn.addEventListener("click", onNext);
-
-showQuestion(qIdx);
+stBtn.addEventListener("click", beginTest);
