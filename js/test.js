@@ -42,3 +42,19 @@ function onNext() {
 prevBtn.addEventListener("click", onPrev);
 nextBtn.addEventListener("click", onNext);
 stBtn.addEventListener("click", beginTest);
+
+// function showChoose(chooseText){
+//     var aBox = document.querySelector(".aBox");
+//     var choose = document.createElement('button');
+//     choose.classList.add('answerList');
+//     aBox.appendChild(choose);
+//     choose.innerHTML = chooseText;
+
+//     // choose.addEventListener("click", function(){
+//     //     var children = document.querySelectorAll('.answerList');
+//     //     for(let i = 0; i < children.length; i++){
+//     //         children[i].disabled = true;
+//     //         children[i].style.display = 'none';
+//     //     }
+//     // }, false);
+// }
